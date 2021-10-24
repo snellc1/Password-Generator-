@@ -22,7 +22,7 @@ combine_list = lowercase + uppercase + special_letters + nums_list
 #Creating password string to include 1 upper, 1 lower, 1 special letter, and 1 number
 password = rand_upper + rand_lower + rand_letter + rand_number
 
-for x in range(rm.randint(8, 12)):
+for x in range(rm.randint(4, 12)):
     password += rm.choice(combine_list)
 
 print(password)
